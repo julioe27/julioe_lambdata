@@ -1,9 +1,10 @@
 import pandas
 
+
 def enlarge(n):
     return 100*n
 
- # it's important to not have global junk when using your function
+# it's important to not have global junk when using your function
 
 
 def df_nulls(df):
@@ -15,7 +16,6 @@ def split_addresses(place):
     Split addresses into multiple columns city, state, zip
     -> df['city'] df['state'] df['zip']
 place.split(',')[0]
-
     '''
     array = []
     x = place.split(',')
@@ -25,8 +25,9 @@ place.split(',')[0]
     z = y.split(' ')
     state = z[0]
     zip_code = z[1]
-    array.extend([state,zip_code])
+    array.extend([state, zip_code])
     return array
+
 
 def state_abbreviation(x):
     '''
@@ -138,7 +139,7 @@ def state_abbreviation(x):
     abbreviations = []
     x = x.title()
     for state in states1:
-      abbreviations.append(state[-2:])
+        abbreviations.append(state[-2:])
     if x in states:
         index = states.index(x)
         return abbreviations[index]
