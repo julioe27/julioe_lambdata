@@ -5,9 +5,9 @@
 pip install -i https://test.pypi.org/simple/ julioe-lambdata
 ````
 
-##Usage
+## Usage
 This package can allow you to split city, state, and zip code into three columns.
-###Example
+### Example
 ````
 from julioe_lambdata.my_mod import split_addresses
 
@@ -19,7 +19,7 @@ print(split_addresses(y))
 ````
 It also allows you to abbreviate a state name into
 its abbreviation and vice versa.
-###Example
+### Example
 ````
 from julioe_lambdata.my_mod import state_abbreviation
 
